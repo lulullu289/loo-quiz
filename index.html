@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="el">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Ποια LOO είσαι σήμερα;</title>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <main>
+          <h1 id="title">Ποια LOO είσαι σήμερα;</h1>
+          <img id="description" src="https://media.tenor.com/ipuTozw3PXsAAAAj/pixel-cat.gif" alt="cute cat gif">
+          <form id="loo-quiz">
+              <fieldset>
+                  <legend>Τι ποτό ήπιες σήμερα;</legend>
+                  <label id="drink-label" for="drink">
+                      <select id="drink" name="drink" required>
+                          <option value="">select one</option>
+                          <option value="Freddoccino">Freddoccino γλυκό</option>
+                          <option value="red-bull">Red-bull</option>
+                          <option value="orange-juice">Πορτοκαλάδα</option>
+                          <option value="beer">Μπύρα</option>
+                      </select>
+                  </label>
+              </fieldset>
+              <fieldset>
+                  <legend>Τι δουλειά έχεις να κάνεις σήμερα;</legend>
+                  <label id="job-label" for="job">
+                      <select id="job" name="job" required>
+                          <option value="">select one</option>
+                          <option value="Dj">Dj στη καντίνα</option>
+                          <option value="soundtrack1">Να τελειώσω το soundtrack για τη ταινία της Χατζάκου</option>
+                          <option value="cats1">Τίποτα, θα κάτσω σπίτι με τα γατιά</option>
+                          <option value="live">Live σε φεμινιστικό φεστιβάλ</option>
+                      </select>
+                  </label>
+              </fieldset>
+              <fieldset>
+                  <legend>Πότε ήταν η τελευταία φορά που αρρώστησες;</legend>
+                  <label id="sick-label" for="sick">
+                      <select id="sick" name="sick" required>
+                          <option value="">select one</option>
+                          <option value="week">Πριν μια βδομάδα</option>
+                          <option value="vacation">Τη τελευταία φορά που πήγα διακοπές</option>
+                          <option value="idk">Σιγά, ούτε που θυμάμαι</option>
+                          <option value="now">Τώρα. Έχω δέκατα </option>
+                      </select>
+                  </label>
+              </fieldset>
+              <fieldset>
+                  <legend>Ποιο ήταν το τελευταίο post που έκανες share;</legend>
+                  <label id="post-label" for="post">
+                      <select id="post" name="post" required>
+                          <option value="">select one</option>
+                          <option value="cats2">Post  με γατάκια στο insta</option>
+                          <option value="angela">Reel με την Άντζελα Δημητρίου να δίνει συνέντευξη </option>
+                          <option value="memes">Post απο ancient memes</option>
+                          <option value="efi">Reel με Έφη Θώδη</option>
+                      </select>
+                  </label>
+              </fieldset>
+              <fieldset>
+                  <legend>Πώς είναι τα μαλλιά σου τώρα;</legend>
+                  <label id="hair-label" for="hair">
+                      <select id="hair" name="hair" required>
+                          <option value="">select one</option>
+                          <option value="wet">Κάτω- λουσμένα</option>
+                          <option value="wild">Κάτω-ανεμοδαρμένα</option>
+                          <option value="bun">Πιασμένα - κοτσίδα</option>
+                          <option value="beethoven">Πιασμένα- Μπετόβεν</option>
+                      </select>
+                  </label>
+              </fieldset>
+              <fieldset>
+                  <legend>Ποια σειρά βλέπεις αυτό το διάστημα;</legend>
+                  <label id="series-label" for="series">
+                      <select id="series" name="series" required>
+                          <option value="">select one</option>
+                          <option value="gilmore">Gilmore girls</option>
+                          <option value="gossip">Gossip girl</option>
+                          <option value="shadows">What  we do in the shadows</option>
+                          <option value="soundtrack2">Δεν βλέπω σειρά, βλέπω κάθε μέρα τη ταινία της Μαρίας γτ γράφω soundtrack λέμε!</option>
+                      </select>
+                  </label>
+              </fieldset>
+              <button id="submit" type="submit">Δες ποια LOO είσαι!</button>
+          </form>
+            <h3 id="congrats-text" class="hidden">
+  <img id="congrats-gif"
+       src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZG84d2xzZHViZjQ3aTU3bnhhY2VqcjYzYWJ4emNtbDBhOXVlZXZxcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/YMa04mZ5kIeXMqXFSV/giphy.gif"
+       alt="ufo gif">🥂🍾Congrats! Είσαι η...</h3>
+<div id="result-container">
+  <img id="result-image" src="" alt="Result Image">
+  <h2 id="result-text"></h2>
+  <button id="submit-again">Παίξε πάλι</button>
+</div>
+          <audio id="hover-sound" src="meow.mp3" preload="auto"></audio>
+          <audio id="click-sound" src="click.mp3" preload="auto"></audio>
+      </main>
+       <script src="script.js"></script>
+  </body>
+</html>
