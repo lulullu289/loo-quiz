@@ -117,6 +117,7 @@ submitAgain.addEventListener("click", () => {
   title.style.display = "block";
   description.style.display = "block";
   resultContainer.classList.remove("active");
+  const congratsText = document.getElementById("congrats-text");
   congratsText.classList.remove("active");
   // Clear result content
   resultImage.src = "";
